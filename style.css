@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.container{
+    width: 370px;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 30px;
+}
+
+.container header{
+    font-size: 25px;
+    text-align: center;
+}
+
+.container form{
+    margin: 30px 0;
+}
+
+form p{
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+form :where(input,select,button){
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+form input{
+    height: 40px;
+    padding: 0 15px;
+    font-size: 18px;
+    border: 1.5px solid darkgray;
+}
+
+form input:focus{
+    border: 2px solid blueviolet;
+    padding: 0 15px;
+}
+
+form .drop-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;   
+}
+
+.drop-list .select-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border: 1.5px solid blueviolet;
+    border-radius: 5px;
+}
+
+.select-box img{
+    width: 40px;
+}
+
+.select-box select{
+    font-size: 17px;
+    background-color: white;
+    width: auto;
+}
+
+.drop-list .icon{
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.exchange-rate{
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    cursor: pointer;
+}
